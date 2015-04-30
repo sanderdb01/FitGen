@@ -7,7 +7,10 @@
 //
 
 import UIKit
+import WatchKit
 
 class ExerciseRow: NSObject {
+    @IBOutlet weak var exerciseNameLabel: WKInterfaceLabel!
+    @IBOutlet weak var repsLabel: WKInterfaceLabel!
    
 }

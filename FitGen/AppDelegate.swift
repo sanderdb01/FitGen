@@ -9,14 +9,87 @@
 import UIKit
 import CoreData
 
+//property names
+let kWorkoutLocation = "workoutLocation"
+let kGeneralBodyLocation = "generalBodyLocation"
+let kSpecificBodyLocation = "specificBodyLocation"
+let kWorkoutType = "workoutType"
+let kLevel1Reps = "level1Reps"
+let kLevel2Reps = "level2Reps"
+let kLevel3Reps = "level3Reps"
+let kLevel4Reps = "level4Reps"
+let kWeight = "weight"
+let kNotes = "notes"
+let kHowTo = "howTo"
+
+// property values
+let kHome = "home"
+let kGym = "gym"
+let kUpper = "upper"
+let kLower = "lower"
+let kTotal = "total"
+let kChest = "chest"
+let kBack = "back"
+let kShoulders = "shoulders"
+let kCore = "core"
+let kLegs = "legs"
+let kBiceps = "bicep"
+let kTriceps = "tricep"
+let kHIIT = "HIIT"
+let kStrength = "strength"
+let kCardio = "cardio"
+
+//Entity Dictionary keys
+let kExercises = "exercises"
+let kNumberOfRounds = "numberOfRounds"
+let kTimeForAMRAP = "timeForAMRAP"
+
+//Workout ID number
+let kWorkoutIDKey = "workoutID"
+
+// My Workout Details Choice
+let kMyDetailsChoice = "detailChoice"
+let kMyDate = "date"
+let kMyType = "type"
+let kMyCompleted = "completed"
+
+//Workout Time Limit
+let kTimeLimit = "timeLimit"
+
+//Workout Round Stop
+let kRoundStopTime = "roundStopTime"
+
+//Unit Set
+let kUnits = "units"
+let kMetric = "metric"
+let kStandard = "standard"
+let kMeterUnits = "m"
+let kKilogramUnits = "kgs"
+let kMileUnits = "mi"
+let kPoundsUnits = "lbs"
+
+//WatchKit Constants
+let kWatchKitDidMakeRequest = "WatchKitDidMakeRequest"
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let exerciseFactory = ExerciseFactory()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        if defaults.boolForKey("hasLaunchedOnce") {
+            //app already launched
+            println("App already has launched before")
+        }
+        else {
+            defaults.setBool(true, forKey: "hasLaunchedOnce")
+            println("First time launch. Loading exercises.....")
+            self.exerciseFactory.loadDefaultExercises()
+        }
         return true
     }
 
@@ -49,13 +122,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var applicationDocumentsDirectory: NSURL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "com.sanders.FitGen" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        return urls[urls.count-1] as NSURL
+        return urls[urls.count-1] as! NSURL
     }()
 
     lazy var managedObjectModel: NSManagedObjectModel = {
         // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
         let modelURL = NSBundle.mainBundle().URLForResource("FitGen", withExtension: "momd")!
-        return NSManagedObjectModel(contentsOfURL: modelURL)
+        return NSManagedObjectModel(contentsOfURL: modelURL)!
     }()
 
     lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator? = {
@@ -72,7 +145,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             dict[NSLocalizedDescriptionKey] = "Failed to initialize the application's saved data"
             dict[NSLocalizedFailureReasonErrorKey] = failureReason
             dict[NSUnderlyingErrorKey] = error
-            error = NSError.errorWithDomain("YOUR_ERROR_DOMAIN", code: 9999, userInfo: dict)
+            error = NSError(domain: "YOUR_ERROR_DOMAIN", code: 9999, userInfo: dict as [NSObject : AnyObject])
             // Replace this with code to handle the error appropriately.
             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
             NSLog("Unresolved error \(error), \(error!.userInfo)")
@@ -105,6 +178,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 abort()
             }
         }
+    }
+    
+    //MARK: - WatchKit
+    
+    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+        
+        let watchKitInformation = WatchKitInfo(playerDictionary: userInfo!, reply: reply)
+        
+        NSNotificationCenter.defaultCenter().postNotificationName(kWatchKitDidMakeRequest, object: watchKitInformation)
     }
 
 }

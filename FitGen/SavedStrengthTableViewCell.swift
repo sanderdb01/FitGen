@@ -10,6 +10,9 @@ import UIKit
 
 class SavedStrengthTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameTextLabel: UILabel!
+    @IBOutlet weak var detailsTextLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

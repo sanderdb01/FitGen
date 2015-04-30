@@ -9,22 +9,23 @@
 import Foundation
 import CoreData
 
+@objc (Workout)
 class Workout: NSManagedObject {
-
+    
     @NSManaged var date: NSDate
     @NSManaged var hiitAFAPDict: AnyObject
     @NSManaged var hiitAMREPDict: AnyObject
-    @NSManaged var isAFAP: NSNumber
-    @NSManaged var isAMRAP: NSNumber
-    @NSManaged var isComplete: NSNumber
+    @NSManaged var isAFAP: Bool
+    @NSManaged var isAMRAP: Bool
+    @NSManaged var isComplete: Bool
     @NSManaged var name: String
     @NSManaged var notes: String
     @NSManaged var strengthArray: AnyObject
-    @NSManaged var superset: NSNumber
+    @NSManaged var superset: Bool
     @NSManaged var supersetArray: AnyObject
     @NSManaged var timeCompleted: String
-    @NSManaged var workoutID: NSNumber
     @NSManaged var workoutType: String
+    @NSManaged var workoutID: NSNumber
     @NSManaged var roundsCompleted: NSNumber
     @NSManaged var score: NSNumber
 

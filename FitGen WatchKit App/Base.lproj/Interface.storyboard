@@ -1,15 +1,198 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zNs-eF-hD1">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FitGen_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="YLZ-iJ-s67">
+                            <items>
+                                <tableRow identifier="ExerciseRow" id="Ila-00-QLs" customClass="ExerciseRow" customModule="FitGen_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="guP-XA-nKj">
+                                        <items>
+                                            <label width="82" height="1" alignment="left" text="Exercise Name" numberOfLines="0" id="f2T-hk-Ze9">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                            <label width="40" height="1" alignment="left" text="100" textAlignment="center" id="bSf-a5-nlJ">
+                                                <fontDescription key="font" type="system" pointSize="19"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="exerciseNameLabel" destination="f2T-hk-Ze9" id="GE4-pL-T0L"/>
+                                        <outlet property="repsLabel" destination="bSf-a5-nlJ" id="va8-FR-yV2"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <timer width="1" alignment="left" verticalAlignment="bottom" textAlignment="center" id="fGE-Y7-kDI"/>
+                        <button width="1" height="90" alignment="left" hidden="YES" title="#/#" id="SHk-IW-zcv">
+                            <fontDescription key="font" type="system" pointSize="51"/>
+                            <connections>
+                                <action selector="roundCounterButtonPressed" destination="AgC-eL-Hgc" id="ZYH-bR-1wA"/>
+                            </connections>
+                        </button>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="MAR-om-esh">
+                            <items>
+                                <button width="50" alignment="left" verticalAlignment="center" title="Start" id="xxg-A9-jCh">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.4237583705357143" green="0.0" blue="0.0047604796261809879" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="timerButtonPressed" destination="AgC-eL-Hgc" id="YxY-q7-CSM"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" hidden="YES" title="StartLarger" id="TS1-WC-QlG">
+                                    <connections>
+                                        <action selector="timerButtonPressed" destination="AgC-eL-Hgc" id="z86-E1-0Vp"/>
+                                    </connections>
+                                </button>
+                                <button width="87" alignment="right" title="0 of #" id="Ql5-vF-Qsq">
+                                    <connections>
+                                        <action selector="roundCounterButtonPressed" destination="AgC-eL-Hgc" id="xrw-ex-ux5"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="zyY-uH-D5Z">
+                        <items>
+                            <menuItem title="Update Exercises" icon="add" id="xwe-8W-mW6">
+                                <connections>
+                                    <action selector="updateExercisesMenuButtonPressed" destination="AgC-eL-Hgc" id="MAV-cG-Ix0"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Reset Timer" icon="block" id="Mc9-a7-2J7">
+                                <connections>
+                                    <action selector="resetTimerMenuButtonPressed" destination="AgC-eL-Hgc" id="jEc-OS-oUE"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Reset Counter" icon="block" id="Cz4-lF-AD8">
+                                <connections>
+                                    <action selector="resetCounterMenuButtonPressed" destination="AgC-eL-Hgc" id="io2-C1-OOH"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Switch Views" icon="repeat" id="npu-CD-kia">
+                                <connections>
+                                    <action selector="switchViewsMenuButtonPressed" destination="AgC-eL-Hgc" id="jjB-u9-reR"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="roundCounterButton" destination="Ql5-vF-Qsq" id="5se-4q-Y4n"/>
+                        <outlet property="roundCounterButtonLarger" destination="SHk-IW-zcv" id="A65-4I-MHp"/>
+                        <outlet property="table" destination="YLZ-iJ-s67" id="GeC-ge-wU8"/>
+                        <outlet property="timerButton" destination="xxg-A9-jCh" id="vfb-Gk-AFt"/>
+                        <outlet property="timerButtonLarger" destination="TS1-WC-QlG" id="AHu-4J-VjO"/>
+                        <outlet property="timerLabel" destination="fGE-Y7-kDI" id="ZZI-cn-KWC"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="182" y="384"/>
+        </scene>
+        <!--Watch Interface Controller-->
+        <scene sceneID="DaM-YD-l91">
+            <objects>
+                <controller id="zNs-eF-hD1" customClass="HIITWatchInterfaceController" customModule="FitGen_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="AcJ-SW-pVp">
+                            <items>
+                                <tableRow identifier="ExerciseRow" id="Gdc-rC-t7t" customClass="ExerciseRow" customModule="FitGen_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="jAG-GY-vDv">
+                                        <items>
+                                            <label width="82" height="1" alignment="left" text="Exercise Name" numberOfLines="0" id="ID3-0A-O0w">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                            <label width="40" height="1" alignment="left" text="100" textAlignment="center" id="9Zz-aa-a4r">
+                                                <fontDescription key="font" type="system" pointSize="19"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="exerciseNameLabel" destination="ID3-0A-O0w" id="8xe-Mr-yGg"/>
+                                        <outlet property="repsLabel" destination="9Zz-aa-a4r" id="No9-uF-ZPm"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" height="90" alignment="left" hidden="YES" title="#/#" id="Lwk-zH-gZc">
+                            <color key="titleColor" red="0.85643464160000005" green="0.52983425930000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.33663694220000001" green="0.0038556968480000001" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="51"/>
+                            <connections>
+                                <action selector="roundCounterButtonPressed" destination="zNs-eF-hD1" id="WF2-Bo-VlJ"/>
+                            </connections>
+                        </button>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Timer" textAlignment="center" id="I0d-NG-Uk4"/>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="32B-lm-BLz">
+                            <items>
+                                <button width="50" alignment="left" verticalAlignment="center" title="Start" id="31z-A8-WaK">
+                                    <color key="titleColor" red="0.0025562956868862489" green="0.78464471726190477" blue="0.009071525430180246" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.0" green="0.36660621279761907" blue="0.0065930439012489937" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                    <connections>
+                                        <action selector="timerButtonPressed" destination="zNs-eF-hD1" id="6YP-S5-pqC"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" hidden="YES" title="StartLarger" id="xJ6-Lp-H7d">
+                                    <color key="titleColor" red="0.002556295687" green="0.78464471729999996" blue="0.0090715254299999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.0" green="0.3666062128" blue="0.0065930439010000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                    <connections>
+                                        <action selector="timerButtonPressed" destination="zNs-eF-hD1" id="jta-KF-hPY"/>
+                                    </connections>
+                                </button>
+                                <button width="87" alignment="right" title="0 of #" id="SfS-dC-3Yl">
+                                    <color key="titleColor" red="0.85643464159274052" green="0.52983425930274164" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.3366369422165254" green="0.003855696848009238" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                                    <connections>
+                                        <action selector="roundCounterButtonPressed" destination="zNs-eF-hD1" id="FSt-vW-QMP"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="GCF-HF-UGB">
+                        <items>
+                            <menuItem title="Update Exercises" icon="add" id="TQQ-sS-U1N">
+                                <connections>
+                                    <action selector="updateExercisesMenuButtonPressed" destination="zNs-eF-hD1" id="EPF-hN-udD"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Reset Timer" icon="block" id="scf-ip-4lR">
+                                <connections>
+                                    <action selector="resetTimerMenuButtonPressed" destination="zNs-eF-hD1" id="T9s-jL-qle"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Reset Counter" icon="block" id="qBc-4I-but">
+                                <connections>
+                                    <action selector="resetCounterMenuButtonPressed" destination="zNs-eF-hD1" id="vQc-LG-gRn"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Switch Views" icon="repeat" id="gaQ-QH-SAO">
+                                <connections>
+                                    <action selector="switchViewsMenuButtonPressed" destination="zNs-eF-hD1" id="IJo-jX-D26"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="roundCounterButton" destination="SfS-dC-3Yl" id="3wB-VK-yis"/>
+                        <outlet property="roundCounterButtonLarger" destination="Lwk-zH-gZc" id="QCN-Ig-a2l"/>
+                        <outlet property="table" destination="AcJ-SW-pVp" id="PMv-ha-SQp"/>
+                        <outlet property="timerButton" destination="31z-A8-WaK" id="tqw-uo-zW5"/>
+                        <outlet property="timerButtonLarger" destination="xJ6-Lp-H7d" id="63Q-Dm-rIw"/>
+                        <outlet property="timerLabel" destination="I0d-NG-Uk4" id="HMR-hj-2F6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="229" y="785"/>
         </scene>
     </scenes>
 </document>

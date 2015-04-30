@@ -10,6 +10,12 @@ import UIKit
 
 class HIITTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var detailsLabel: UILabel!
+    @IBOutlet weak var repsLabel: UILabel!
+
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

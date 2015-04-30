@@ -1,0 +1,885 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7400DC931AC081900011B4FB /* HIITExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7400DC921AC081900011B4FB /* HIITExerciseDetailViewController.swift */; };
+		7435C4DC1AEECB8D00B84E80 /* HIITWatchInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7435C4DB1AEECB8D00B84E80 /* HIITWatchInterfaceController.swift */; };
+		74432D621AE5570000A5652C /* ConvertUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74432D611AE5570000A5652C /* ConvertUnits.swift */; };
+		74432D681AE5DF7600A5652C /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74432D671AE5DF7600A5652C /* Workout.swift */; };
+		74432D741AE7FEF500A5652C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74432D731AE7FEF500A5652C /* InterfaceController.swift */; };
+		74432D761AE7FEF500A5652C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74432D751AE7FEF500A5652C /* Images.xcassets */; };
+		74432D7A1AE7FEF500A5652C /* FitGen WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 74432D791AE7FEF500A5652C /* FitGen WatchKit App.app */; };
+		74432D821AE7FEF500A5652C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74432D801AE7FEF500A5652C /* Interface.storyboard */; };
+		74432D841AE7FEF500A5652C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74432D831AE7FEF500A5652C /* Images.xcassets */; };
+		74432D871AE7FEF500A5652C /* FitGen WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 74432D6F1AE7FEF500A5652C /* FitGen WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		74432D901AE8040400A5652C /* ExerciseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74432D8F1AE8040400A5652C /* ExerciseRow.swift */; };
+		74607EFB1A5ADA20003D79A9 /* GenerateStrengthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74607EFA1A5ADA20003D79A9 /* GenerateStrengthViewController.swift */; };
+		74693FEF1A826A58008C19CB /* ChangeHIITExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74693FEE1A826A58008C19CB /* ChangeHIITExerciseTableViewController.swift */; };
+		74693FF11A83D575008C19CB /* ExecuteHIITViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74693FF01A83D575008C19CB /* ExecuteHIITViewController.swift */; };
+		7491B0D31ADD76D200A8C84B /* DefaultExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7491B0D21ADD76D200A8C84B /* DefaultExercise.swift */; };
+		7491B0D51ADEC51F00A8C84B /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7491B0D41ADEC51F00A8C84B /* HowToViewController.swift */; };
+		7491B0D71AE02A5900A8C84B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7491B0D61AE02A5900A8C84B /* SettingsViewController.swift */; };
+		74979DAC1AE995F0008F36F9 /* WatchKitInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74979DAB1AE995F0008F36F9 /* WatchKitInfo.swift */; };
+		749C12151A75B6CC00328931 /* SavedHIITWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749C12141A75B6CC00328931 /* SavedHIITWorkoutViewController.swift */; };
+		749C12171A768C4D00328931 /* SavedStrengthWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749C12161A768C4D00328931 /* SavedStrengthWorkoutViewController.swift */; };
+		749C12191A76983200328931 /* SavedStrengthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749C12181A76983200328931 /* SavedStrengthTableViewCell.swift */; };
+		74A4FCEA1A76BB9C004CECA9 /* AddExerciseToStrengthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FCE91A76BB9C004CECA9 /* AddExerciseToStrengthTableViewController.swift */; };
+		74A4FCF01A7BFD32004CECA9 /* WorkoutNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A4FCEF1A7BFD32004CECA9 /* WorkoutNotesViewController.swift */; };
+		74B3658B1AE0496F0022C09F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B3658A1AE0496F0022C09F /* AboutViewController.swift */; };
+		74C7C4691A5EE0D1006F040F /* StrengthWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C7C4681A5EE0D1006F040F /* StrengthWorkoutViewController.swift */; };
+		74D6951D1A6571DC00BCD289 /* StrengthExerciseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D6951C1A6571DC00BCD289 /* StrengthExerciseDetailViewController.swift */; };
+		74D9EF5E1A2CF6AA0003F195 /* WorkoutTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9EF5D1A2CF6AA0003F195 /* WorkoutTemp.swift */; };
+		74D9EF601A2D77F90003F195 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9EF5F1A2D77F90003F195 /* StartScreenViewController.swift */; };
+		74D9EF641A2E39CD0003F195 /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9EF631A2E39CD0003F195 /* ExerciseListViewController.swift */; };
+		74D9EF661A2E3EAE0003F195 /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9EF651A2E3EAE0003F195 /* AddExerciseViewController.swift */; };
+		74D9EF681A2F7E2B0003F195 /* ExerciseListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D9EF671A2F7E2B0003F195 /* ExerciseListTableViewCell.swift */; };
+		74E218501A2FB71700C78015 /* WorkoutListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2184F1A2FB71700C78015 /* WorkoutListViewController.swift */; };
+		74F704591A2431D3001D013D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F704581A2431D3001D013D /* AppDelegate.swift */; };
+		74F7045C1A2431D3001D013D /* FitGen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74F7045A1A2431D3001D013D /* FitGen.xcdatamodeld */; };
+		74F7045E1A2431D3001D013D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F7045D1A2431D3001D013D /* ViewController.swift */; };
+		74F704611A2431D3001D013D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F7045F1A2431D3001D013D /* Main.storyboard */; };
+		74F704631A2431D3001D013D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F704621A2431D3001D013D /* Images.xcassets */; };
+		74F704661A2431D3001D013D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74F704641A2431D3001D013D /* LaunchScreen.xib */; };
+		74F704721A2431D3001D013D /* FitGenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F704711A2431D3001D013D /* FitGenTests.swift */; };
+		74F704861A24361F001D013D /* WorkoutFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F704851A24361F001D013D /* WorkoutFactory.swift */; };
+		74F7048C1A24E6F5001D013D /* defaultExercises.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74F7048B1A24E6F5001D013D /* defaultExercises.plist */; };
+		74F7048E1A24EBA1001D013D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F7048D1A24EBA1001D013D /* Constants.swift */; };
+		74F704901A2503F1001D013D /* ExerciseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F7048F1A2503F1001D013D /* ExerciseFactory.swift */; };
+		74F704981A2AB57B001D013D /* WorkoutExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F704971A2AB57B001D013D /* WorkoutExercise.swift */; };
+		74F7049E1A2C1771001D013D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F7049D1A2C1771001D013D /* Date.swift */; };
+		74F704A01A2C1B37001D013D /* GenerateHIITViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F7049F1A2C1B37001D013D /* GenerateHIITViewController.swift */; };
+		74F704A21A2C1ED7001D013D /* CreatedHIITViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F704A11A2C1ED7001D013D /* CreatedHIITViewController.swift */; };
+		74F704A61A2C1F7F001D013D /* HIITTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F704A51A2C1F7F001D013D /* HIITTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74432D7B1AE7FEF500A5652C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74F7044B1A2431D3001D013D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74432D781AE7FEF500A5652C;
+			remoteInfo = "FitGen WatchKit App";
+		};
+		74432D851AE7FEF500A5652C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74F7044B1A2431D3001D013D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74432D6E1AE7FEF500A5652C;
+			remoteInfo = "FitGen WatchKit Extension";
+		};
+		74F7046C1A2431D3001D013D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74F7044B1A2431D3001D013D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74F704521A2431D3001D013D;
+			remoteInfo = FitGen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		74432D8E1AE7FEF600A5652C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				74432D871AE7FEF500A5652C /* FitGen WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7400DC921AC081900011B4FB /* HIITExerciseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIITExerciseDetailViewController.swift; sourceTree = "<group>"; };
+		7435C4DB1AEECB8D00B84E80 /* HIITWatchInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIITWatchInterfaceController.swift; sourceTree = "<group>"; };
+		74432D611AE5570000A5652C /* ConvertUnits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertUnits.swift; sourceTree = "<group>"; };
+		74432D671AE5DF7600A5652C /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Workout.swift; path = ../Workout.swift; sourceTree = "<group>"; };
+		74432D6F1AE7FEF500A5652C /* FitGen WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FitGen WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74432D721AE7FEF500A5652C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74432D731AE7FEF500A5652C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		74432D751AE7FEF500A5652C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		74432D791AE7FEF500A5652C /* FitGen WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FitGen WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74432D7F1AE7FEF500A5652C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74432D811AE7FEF500A5652C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		74432D831AE7FEF500A5652C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		74432D8F1AE8040400A5652C /* ExerciseRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseRow.swift; sourceTree = "<group>"; };
+		74607EFA1A5ADA20003D79A9 /* GenerateStrengthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateStrengthViewController.swift; sourceTree = "<group>"; };
+		74693FEE1A826A58008C19CB /* ChangeHIITExerciseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeHIITExerciseTableViewController.swift; sourceTree = "<group>"; };
+		74693FF01A83D575008C19CB /* ExecuteHIITViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExecuteHIITViewController.swift; sourceTree = "<group>"; };
+		7491B0D21ADD76D200A8C84B /* DefaultExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultExercise.swift; sourceTree = "<group>"; };
+		7491B0D41ADEC51F00A8C84B /* HowToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowToViewController.swift; sourceTree = "<group>"; };
+		7491B0D61AE02A5900A8C84B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		74979DAB1AE995F0008F36F9 /* WatchKitInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchKitInfo.swift; sourceTree = "<group>"; };
+		749C12141A75B6CC00328931 /* SavedHIITWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedHIITWorkoutViewController.swift; sourceTree = "<group>"; };
+		749C12161A768C4D00328931 /* SavedStrengthWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedStrengthWorkoutViewController.swift; sourceTree = "<group>"; };
+		749C12181A76983200328931 /* SavedStrengthTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedStrengthTableViewCell.swift; sourceTree = "<group>"; };
+		74A4FCE91A76BB9C004CECA9 /* AddExerciseToStrengthTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExerciseToStrengthTableViewController.swift; sourceTree = "<group>"; };
+		74A4FCEF1A7BFD32004CECA9 /* WorkoutNotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutNotesViewController.swift; sourceTree = "<group>"; };
+		74B3658A1AE0496F0022C09F /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		74C7C4681A5EE0D1006F040F /* StrengthWorkoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrengthWorkoutViewController.swift; sourceTree = "<group>"; };
+		74D6951C1A6571DC00BCD289 /* StrengthExerciseDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrengthExerciseDetailViewController.swift; sourceTree = "<group>"; };
+		74D9EF5D1A2CF6AA0003F195 /* WorkoutTemp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutTemp.swift; sourceTree = "<group>"; };
+		74D9EF5F1A2D77F90003F195 /* StartScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		74D9EF631A2E39CD0003F195 /* ExerciseListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
+		74D9EF651A2E3EAE0003F195 /* AddExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
+		74D9EF671A2F7E2B0003F195 /* ExerciseListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseListTableViewCell.swift; sourceTree = "<group>"; };
+		74E2184F1A2FB71700C78015 /* WorkoutListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutListViewController.swift; sourceTree = "<group>"; };
+		74F704531A2431D3001D013D /* FitGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F704571A2431D3001D013D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F704581A2431D3001D013D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74F7045B1A2431D3001D013D /* FitGen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FitGen.xcdatamodel; sourceTree = "<group>"; };
+		74F7045D1A2431D3001D013D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74F704601A2431D3001D013D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74F704621A2431D3001D013D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		74F704651A2431D3001D013D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		74F7046B1A2431D3001D013D /* FitGenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitGenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F704701A2431D3001D013D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F704711A2431D3001D013D /* FitGenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitGenTests.swift; sourceTree = "<group>"; };
+		74F704851A24361F001D013D /* WorkoutFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutFactory.swift; sourceTree = "<group>"; };
+		74F7048B1A24E6F5001D013D /* defaultExercises.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaultExercises.plist; sourceTree = "<group>"; };
+		74F7048D1A24EBA1001D013D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		74F7048F1A2503F1001D013D /* ExerciseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseFactory.swift; sourceTree = "<group>"; };
+		74F704971A2AB57B001D013D /* WorkoutExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutExercise.swift; sourceTree = "<group>"; };
+		74F7049D1A2C1771001D013D /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		74F7049F1A2C1B37001D013D /* GenerateHIITViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateHIITViewController.swift; sourceTree = "<group>"; };
+		74F704A11A2C1ED7001D013D /* CreatedHIITViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatedHIITViewController.swift; sourceTree = "<group>"; };
+		74F704A51A2C1F7F001D013D /* HIITTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HIITTableViewCell.swift; path = ../HIITTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74432D6C1AE7FEF500A5652C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F704501A2431D3001D013D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F704681A2431D3001D013D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74432D701AE7FEF500A5652C /* FitGen WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				74432D731AE7FEF500A5652C /* InterfaceController.swift */,
+				7435C4DB1AEECB8D00B84E80 /* HIITWatchInterfaceController.swift */,
+				74432D8F1AE8040400A5652C /* ExerciseRow.swift */,
+				74432D751AE7FEF500A5652C /* Images.xcassets */,
+				74432D711AE7FEF500A5652C /* Supporting Files */,
+			);
+			path = "FitGen WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		74432D711AE7FEF500A5652C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74432D721AE7FEF500A5652C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74432D7D1AE7FEF500A5652C /* FitGen WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				74432D801AE7FEF500A5652C /* Interface.storyboard */,
+				74432D831AE7FEF500A5652C /* Images.xcassets */,
+				74432D7E1AE7FEF500A5652C /* Supporting Files */,
+			);
+			path = "FitGen WatchKit App";
+			sourceTree = "<group>";
+		};
+		74432D7E1AE7FEF500A5652C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74432D7F1AE7FEF500A5652C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		749C121A1A76983F00328931 /* Saved Workouts */ = {
+			isa = PBXGroup;
+			children = (
+				74E2184F1A2FB71700C78015 /* WorkoutListViewController.swift */,
+				749C12141A75B6CC00328931 /* SavedHIITWorkoutViewController.swift */,
+				749C12161A768C4D00328931 /* SavedStrengthWorkoutViewController.swift */,
+				749C12181A76983200328931 /* SavedStrengthTableViewCell.swift */,
+			);
+			name = "Saved Workouts";
+			sourceTree = "<group>";
+		};
+		749C121B1A76987600328931 /* Factory and Temp Classes */ = {
+			isa = PBXGroup;
+			children = (
+				74F704851A24361F001D013D /* WorkoutFactory.swift */,
+				74D9EF5D1A2CF6AA0003F195 /* WorkoutTemp.swift */,
+				74F7048F1A2503F1001D013D /* ExerciseFactory.swift */,
+				74F704971A2AB57B001D013D /* WorkoutExercise.swift */,
+			);
+			name = "Factory and Temp Classes";
+			sourceTree = "<group>";
+		};
+		749C121C1A76989E00328931 /* Generate HIIT */ = {
+			isa = PBXGroup;
+			children = (
+				74F7049F1A2C1B37001D013D /* GenerateHIITViewController.swift */,
+				74F704A11A2C1ED7001D013D /* CreatedHIITViewController.swift */,
+				74693FF01A83D575008C19CB /* ExecuteHIITViewController.swift */,
+				74693FEE1A826A58008C19CB /* ChangeHIITExerciseTableViewController.swift */,
+				7400DC921AC081900011B4FB /* HIITExerciseDetailViewController.swift */,
+			);
+			name = "Generate HIIT";
+			sourceTree = "<group>";
+		};
+		749C121D1A7698B900328931 /* Generate Strength */ = {
+			isa = PBXGroup;
+			children = (
+				74607EFA1A5ADA20003D79A9 /* GenerateStrengthViewController.swift */,
+				74C7C4681A5EE0D1006F040F /* StrengthWorkoutViewController.swift */,
+				74A4FCE91A76BB9C004CECA9 /* AddExerciseToStrengthTableViewController.swift */,
+				74D6951C1A6571DC00BCD289 /* StrengthExerciseDetailViewController.swift */,
+			);
+			name = "Generate Strength";
+			sourceTree = "<group>";
+		};
+		74F7044A1A2431D3001D013D = {
+			isa = PBXGroup;
+			children = (
+				74F704551A2431D3001D013D /* FitGen */,
+				74F7046E1A2431D3001D013D /* FitGenTests */,
+				74432D701AE7FEF500A5652C /* FitGen WatchKit Extension */,
+				74432D7D1AE7FEF500A5652C /* FitGen WatchKit App */,
+				74F704541A2431D3001D013D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74F704541A2431D3001D013D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74F704531A2431D3001D013D /* FitGen.app */,
+				74F7046B1A2431D3001D013D /* FitGenTests.xctest */,
+				74432D6F1AE7FEF500A5652C /* FitGen WatchKit Extension.appex */,
+				74432D791AE7FEF500A5652C /* FitGen WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74F704551A2431D3001D013D /* FitGen */ = {
+			isa = PBXGroup;
+			children = (
+				74F704581A2431D3001D013D /* AppDelegate.swift */,
+				74F7045D1A2431D3001D013D /* ViewController.swift */,
+				74F7045F1A2431D3001D013D /* Main.storyboard */,
+				74F704641A2431D3001D013D /* LaunchScreen.xib */,
+				74F704A71A2C2076001D013D /* View Controllers */,
+				749C121B1A76987600328931 /* Factory and Temp Classes */,
+				74F704561A2431D3001D013D /* Supporting Files */,
+			);
+			path = FitGen;
+			sourceTree = "<group>";
+		};
+		74F704561A2431D3001D013D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74F704A51A2C1F7F001D013D /* HIITTableViewCell.swift */,
+				74432D671AE5DF7600A5652C /* Workout.swift */,
+				74432D611AE5570000A5652C /* ConvertUnits.swift */,
+				74F7049D1A2C1771001D013D /* Date.swift */,
+				74F7045A1A2431D3001D013D /* FitGen.xcdatamodeld */,
+				7491B0D21ADD76D200A8C84B /* DefaultExercise.swift */,
+				74F7048D1A24EBA1001D013D /* Constants.swift */,
+				74F7048B1A24E6F5001D013D /* defaultExercises.plist */,
+				74F704571A2431D3001D013D /* Info.plist */,
+				74F704621A2431D3001D013D /* Images.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74F7046E1A2431D3001D013D /* FitGenTests */ = {
+			isa = PBXGroup;
+			children = (
+				74F704711A2431D3001D013D /* FitGenTests.swift */,
+				74F7046F1A2431D3001D013D /* Supporting Files */,
+			);
+			path = FitGenTests;
+			sourceTree = "<group>";
+		};
+		74F7046F1A2431D3001D013D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74F704701A2431D3001D013D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74F704A71A2C2076001D013D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				74D9EF5F1A2D77F90003F195 /* StartScreenViewController.swift */,
+				74979DAB1AE995F0008F36F9 /* WatchKitInfo.swift */,
+				7491B0D61AE02A5900A8C84B /* SettingsViewController.swift */,
+				74B3658A1AE0496F0022C09F /* AboutViewController.swift */,
+				74D9EF631A2E39CD0003F195 /* ExerciseListViewController.swift */,
+				74D9EF651A2E3EAE0003F195 /* AddExerciseViewController.swift */,
+				74D9EF671A2F7E2B0003F195 /* ExerciseListTableViewCell.swift */,
+				74A4FCEF1A7BFD32004CECA9 /* WorkoutNotesViewController.swift */,
+				7491B0D41ADEC51F00A8C84B /* HowToViewController.swift */,
+				749C121C1A76989E00328931 /* Generate HIIT */,
+				749C121D1A7698B900328931 /* Generate Strength */,
+				749C121A1A76983F00328931 /* Saved Workouts */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74432D6E1AE7FEF500A5652C /* FitGen WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74432D8B1AE7FEF600A5652C /* Build configuration list for PBXNativeTarget "FitGen WatchKit Extension" */;
+			buildPhases = (
+				74432D6B1AE7FEF500A5652C /* Sources */,
+				74432D6C1AE7FEF500A5652C /* Frameworks */,
+				74432D6D1AE7FEF500A5652C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74432D7C1AE7FEF500A5652C /* PBXTargetDependency */,
+			);
+			name = "FitGen WatchKit Extension";
+			productName = "FitGen WatchKit Extension";
+			productReference = 74432D6F1AE7FEF500A5652C /* FitGen WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		74432D781AE7FEF500A5652C /* FitGen WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74432D881AE7FEF600A5652C /* Build configuration list for PBXNativeTarget "FitGen WatchKit App" */;
+			buildPhases = (
+				74432D771AE7FEF500A5652C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FitGen WatchKit App";
+			productName = "FitGen WatchKit App";
+			productReference = 74432D791AE7FEF500A5652C /* FitGen WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		74F704521A2431D3001D013D /* FitGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74F704751A2431D3001D013D /* Build configuration list for PBXNativeTarget "FitGen" */;
+			buildPhases = (
+				74F7044F1A2431D3001D013D /* Sources */,
+				74F704501A2431D3001D013D /* Frameworks */,
+				74F704511A2431D3001D013D /* Resources */,
+				74432D8E1AE7FEF600A5652C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74432D861AE7FEF500A5652C /* PBXTargetDependency */,
+			);
+			name = FitGen;
+			productName = FitGen;
+			productReference = 74F704531A2431D3001D013D /* FitGen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74F7046A1A2431D3001D013D /* FitGenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74F704781A2431D3001D013D /* Build configuration list for PBXNativeTarget "FitGenTests" */;
+			buildPhases = (
+				74F704671A2431D3001D013D /* Sources */,
+				74F704681A2431D3001D013D /* Frameworks */,
+				74F704691A2431D3001D013D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74F7046D1A2431D3001D013D /* PBXTargetDependency */,
+			);
+			name = FitGenTests;
+			productName = FitGenTests;
+			productReference = 74F7046B1A2431D3001D013D /* FitGenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74F7044B1A2431D3001D013D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Bitfountain.io;
+				TargetAttributes = {
+					74432D6E1AE7FEF500A5652C = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = HX76BH5U54;
+					};
+					74432D781AE7FEF500A5652C = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					74F704521A2431D3001D013D = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = HX76BH5U54;
+					};
+					74F7046A1A2431D3001D013D = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 74F704521A2431D3001D013D;
+					};
+				};
+			};
+			buildConfigurationList = 74F7044E1A2431D3001D013D /* Build configuration list for PBXProject "GenFit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74F7044A1A2431D3001D013D;
+			productRefGroup = 74F704541A2431D3001D013D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74F704521A2431D3001D013D /* FitGen */,
+				74F7046A1A2431D3001D013D /* FitGenTests */,
+				74432D6E1AE7FEF500A5652C /* FitGen WatchKit Extension */,
+				74432D781AE7FEF500A5652C /* FitGen WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74432D6D1AE7FEF500A5652C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74432D761AE7FEF500A5652C /* Images.xcassets in Resources */,
+				74432D7A1AE7FEF500A5652C /* FitGen WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74432D771AE7FEF500A5652C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74432D821AE7FEF500A5652C /* Interface.storyboard in Resources */,
+				74432D841AE7FEF500A5652C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F704511A2431D3001D013D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74F704611A2431D3001D013D /* Main.storyboard in Resources */,
+				74F704661A2431D3001D013D /* LaunchScreen.xib in Resources */,
+				74F704631A2431D3001D013D /* Images.xcassets in Resources */,
+				74F7048C1A24E6F5001D013D /* defaultExercises.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F704691A2431D3001D013D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74432D6B1AE7FEF500A5652C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74432D901AE8040400A5652C /* ExerciseRow.swift in Sources */,
+				74432D741AE7FEF500A5652C /* InterfaceController.swift in Sources */,
+				7435C4DC1AEECB8D00B84E80 /* HIITWatchInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F7044F1A2431D3001D013D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74607EFB1A5ADA20003D79A9 /* GenerateStrengthViewController.swift in Sources */,
+				74A4FCF01A7BFD32004CECA9 /* WorkoutNotesViewController.swift in Sources */,
+				74F704861A24361F001D013D /* WorkoutFactory.swift in Sources */,
+				74F704A01A2C1B37001D013D /* GenerateHIITViewController.swift in Sources */,
+				74F7049E1A2C1771001D013D /* Date.swift in Sources */,
+				74979DAC1AE995F0008F36F9 /* WatchKitInfo.swift in Sources */,
+				74D6951D1A6571DC00BCD289 /* StrengthExerciseDetailViewController.swift in Sources */,
+				74D9EF641A2E39CD0003F195 /* ExerciseListViewController.swift in Sources */,
+				74432D621AE5570000A5652C /* ConvertUnits.swift in Sources */,
+				7491B0D71AE02A5900A8C84B /* SettingsViewController.swift in Sources */,
+				74F704A61A2C1F7F001D013D /* HIITTableViewCell.swift in Sources */,
+				749C12171A768C4D00328931 /* SavedStrengthWorkoutViewController.swift in Sources */,
+				7400DC931AC081900011B4FB /* HIITExerciseDetailViewController.swift in Sources */,
+				74D9EF681A2F7E2B0003F195 /* ExerciseListTableViewCell.swift in Sources */,
+				74A4FCEA1A76BB9C004CECA9 /* AddExerciseToStrengthTableViewController.swift in Sources */,
+				74F7045E1A2431D3001D013D /* ViewController.swift in Sources */,
+				74432D681AE5DF7600A5652C /* Workout.swift in Sources */,
+				749C12151A75B6CC00328931 /* SavedHIITWorkoutViewController.swift in Sources */,
+				74D9EF661A2E3EAE0003F195 /* AddExerciseViewController.swift in Sources */,
+				7491B0D31ADD76D200A8C84B /* DefaultExercise.swift in Sources */,
+				74F704901A2503F1001D013D /* ExerciseFactory.swift in Sources */,
+				74F7045C1A2431D3001D013D /* FitGen.xcdatamodeld in Sources */,
+				74693FEF1A826A58008C19CB /* ChangeHIITExerciseTableViewController.swift in Sources */,
+				74D9EF5E1A2CF6AA0003F195 /* WorkoutTemp.swift in Sources */,
+				74F704981A2AB57B001D013D /* WorkoutExercise.swift in Sources */,
+				74D9EF601A2D77F90003F195 /* StartScreenViewController.swift in Sources */,
+				74C7C4691A5EE0D1006F040F /* StrengthWorkoutViewController.swift in Sources */,
+				74B3658B1AE0496F0022C09F /* AboutViewController.swift in Sources */,
+				74F704A21A2C1ED7001D013D /* CreatedHIITViewController.swift in Sources */,
+				74E218501A2FB71700C78015 /* WorkoutListViewController.swift in Sources */,
+				7491B0D51ADEC51F00A8C84B /* HowToViewController.swift in Sources */,
+				74F704591A2431D3001D013D /* AppDelegate.swift in Sources */,
+				74F7048E1A24EBA1001D013D /* Constants.swift in Sources */,
+				74693FF11A83D575008C19CB /* ExecuteHIITViewController.swift in Sources */,
+				749C12191A76983200328931 /* SavedStrengthTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F704671A2431D3001D013D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74F704721A2431D3001D013D /* FitGenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74432D7C1AE7FEF500A5652C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74432D781AE7FEF500A5652C /* FitGen WatchKit App */;
+			targetProxy = 74432D7B1AE7FEF500A5652C /* PBXContainerItemProxy */;
+		};
+		74432D861AE7FEF500A5652C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74432D6E1AE7FEF500A5652C /* FitGen WatchKit Extension */;
+			targetProxy = 74432D851AE7FEF500A5652C /* PBXContainerItemProxy */;
+		};
+		74F7046D1A2431D3001D013D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74F704521A2431D3001D013D /* FitGen */;
+			targetProxy = 74F7046C1A2431D3001D013D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74432D801AE7FEF500A5652C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74432D811AE7FEF500A5652C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		74F7045F1A2431D3001D013D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74F704601A2431D3001D013D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74F704641A2431D3001D013D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74F704651A2431D3001D013D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74432D891AE7FEF600A5652C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = FitGen_WatchKit_Extension;
+				INFOPLIST_FILE = "FitGen WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		74432D8A1AE7FEF600A5652C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = FitGen_WatchKit_Extension;
+				INFOPLIST_FILE = "FitGen WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		74432D8C1AE7FEF600A5652C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FitGen WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		74432D8D1AE7FEF600A5652C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "FitGen WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		74F704731A2431D3001D013D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74F704741A2431D3001D013D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74F704761A2431D3001D013D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FitGen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		74F704771A2431D3001D013D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FitGen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		74F704791A2431D3001D013D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FitGenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitGen.app/FitGen";
+			};
+			name = Debug;
+		};
+		74F7047A1A2431D3001D013D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FitGenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FitGen.app/FitGen";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74432D881AE7FEF600A5652C /* Build configuration list for PBXNativeTarget "FitGen WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74432D891AE7FEF600A5652C /* Debug */,
+				74432D8A1AE7FEF600A5652C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74432D8B1AE7FEF600A5652C /* Build configuration list for PBXNativeTarget "FitGen WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74432D8C1AE7FEF600A5652C /* Debug */,
+				74432D8D1AE7FEF600A5652C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74F7044E1A2431D3001D013D /* Build configuration list for PBXProject "GenFit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F704731A2431D3001D013D /* Debug */,
+				74F704741A2431D3001D013D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74F704751A2431D3001D013D /* Build configuration list for PBXNativeTarget "FitGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F704761A2431D3001D013D /* Debug */,
+				74F704771A2431D3001D013D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74F704781A2431D3001D013D /* Build configuration list for PBXNativeTarget "FitGenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F704791A2431D3001D013D /* Debug */,
+				74F7047A1A2431D3001D013D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		74F7045A1A2431D3001D013D /* FitGen.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				74F7045B1A2431D3001D013D /* FitGen.xcdatamodel */,
+			);
+			currentVersion = 74F7045B1A2431D3001D013D /* FitGen.xcdatamodel */;
+			path = FitGen.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 74F7044B1A2431D3001D013D /* Project object */;
+}

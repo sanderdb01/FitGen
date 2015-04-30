@@ -17,7 +17,7 @@ class Date
         components.month = month
         components.day = day
         var gregorianCalendar = NSCalendar(identifier: NSGregorianCalendar)
-        var date = gregorianCalendar.dateFromComponents(components)
+        var date = gregorianCalendar!.dateFromComponents(components)
         return date!
     }
     
@@ -28,5 +28,16 @@ class Date
         let dateString = dateStringFormatter.stringFromDate(date)
         
         return dateString
+    }
+    class func getCurrentDate() -> NSDate
+    {
+        let date = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let components = calendar.components(.CalendarUnitDay | .CalendarUnitMonth | .CalendarUnitYear, fromDate: date)
+        let day = components.day
+        let month = components.month
+        let year = components.year
+        
+        return from(year: year, month: month, day: day)
     }
 }

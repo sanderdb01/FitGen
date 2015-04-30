@@ -8,7 +8,16 @@
 
 import UIKit
 
+protocol AddExerciseToStrengthTableViewControllerDelegate {
+    func passBackExercise(exercise:WorkoutExercise)
+}
+
 class AddExerciseToStrengthTableViewController: UITableViewController {
+    
+    var exerciseArray:[DefaultExercise] = []
+    var exerciseFactory = ExerciseFactory()
+    
+    var delegate:AddExerciseToStrengthTableViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +27,10 @@ class AddExerciseToStrengthTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        self.exerciseArray = exerciseFactory.returnDefaultExerciseArray()
+        let backgroundImage = UIImageView(image: UIImage(named: "FGBackground2.png"))
+        self.tableView.backgroundView = backgroundImage
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,24 +43,32 @@ class AddExerciseToStrengthTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return self.exerciseArray.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("addExerciseToStrengthCell", forIndexPath: indexPath) as! UITableViewCell
 
         // Configure the cell...
+        cell.textLabel?.text = self.exerciseArray[indexPath.row].name
+        cell.detailTextLabel?.text = self.exerciseArray[indexPath.row].specificBodyLocation
 
         return cell
     }
-    */
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let ex = self.exerciseArray[indexPath.row] as DefaultExercise                                   
+        let exercise:WorkoutExercise = WorkoutExercise(name: ex.name, date: Date.getCurrentDate(), workoutType: ex.workoutType, specificBodyLocation: ex.specificBodyLocation, generalBodyLocation: ex.generalBodyLocation, superset: 0, weight: [ex.weight.integerValue, ex.weight.integerValue, ex.weight.integerValue], reps: [10,10,10], howTo: ex.howTo)
+        self.delegate!.passBackExercise(exercise)
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
